@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "name": "RPH-Desktop",
+  "version": "0.1.0",
+  "description": "An unofficial cross-platform RPHaven app.",
+  "keywords": [
+    "RPHaven, electron"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aeris/rph-desktop.git"
+  },
+  "author": {
+    "name": "Alex Wilson",
+    "email": "a@ax.gy"
+  },
+  "main": "main.js",
+  "bin": {
+    "rph": "./start.js"
+  },
+  "scripts": {
+    "start": "./start.js",
+    "build": "./build.js $npm_package_name $npm_package_version",
+    "test": "./build.js $npm_package_name $npm_package_version"
+  },
+  "devDependencies": {
+    "electron-packager": "^5.2.0",
+    "electron-prebuilt": "^0.36.2",
+    "electron-builder": "^2.6.0",
+    "grunt-electron": "^2.0.1",
+    "rcedit": "^0.3.0"
+  }
+}
